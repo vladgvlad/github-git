@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vlad Grechukh";>
+    <meta name="author" content="Hugo Laorden Gomis";>
+    <title>Basic Git Commands</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Basic Git Commands</h1>
+            <p>A quick guide to the most common Git commands for managing repositories.</p>
+            <hr>
+
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <h2>Git Commands</h2>
+                
+                <div class="command">
+                    <h3>1. git init</h3>
+                    <p><strong>Description:</strong> Initializes a new Git repository in the current directory. It creates a hidden folder called `.git` where all Git configuration and tracking files are stored.</p>
+                    <code>git init</code>
+                </div>
+                
+                <div class="command">
+                    <h3>2. git clone</h3>
+                    <p><strong>Description:</strong> Clones a remote repository to your local machine. Use the repository URL to create a local copy.</p>
+                    <code>git clone <em>repository-url</em></code>
+                </div>
+                
+                <div class="command">
+                    <h3>3. git status</h3>
+                    <p><strong>Description:</strong> Shows the status of files in the repository, indicating which ones are modified, which are ready to be committed, etc.</p>
+                    <code>git status</code>
+                </div>
+                
+                <div class="command">
+                    <h3>4. git add</h3>
+                    <p><strong>Description:</strong> Adds files to the staging area to be committed. You can add a specific file or all modified files.</p>
+                    <code>git add <em>file</em></code><br>
+                    <code>git add .</code> <!-- Adds all modified files -->
+                </div>
+                
+                <div class="command">
+                    <h3>5. git commit</h3>
+                    <p><strong>Description:</strong> Records changes in the local repository. This command should be used after adding files with `git add`.</p>
+                    <code>git commit -m "<em>commit-message</em>"</code>
+                </div>
+                
+                <div class="command">
+                    <h3>6. git push</h3>
+                    <p><strong>Description:</strong> Pushes committed changes to the remote repository. A remote repository must be configured first.</p>
+                    <code>git push origin <em>branch-name</em></code>
+                </div>
+                
+                <div class="command">
+                    <h3>7. git checkout</h3>
+                    <p><strong>Description:</strong> Switches to a different version or branch to view or work on a specific version.</p>
+                    <code>git checkout <em>branch-name</em></code>
+                </div>
+                
+                <div class="command">
+                    <h3>8. git branch</h3>
+                    <p><strong>Description:</strong> Shows the branches in your repository. You can also use this command to create a new branch or delete an existing one.</p>
+                    <code>git branch</code><br>
+                    <code>git branch <em>branch-name</em></code>
+                </div>
+                
+                <div class="command">
+                    <h3>9. git merge</h3>
+                    <p><strong>Description:</strong> Merges one branch into the current branch. You need to be on the branch you want to merge into.</p>
+                    <code>git merge <em>branch-name</em></code>
+                </div>
+                
+                <div class="command">
+                    <h3>10. git log</h3>
+                    <p><strong>Description:</strong> Displays the commit history of the repository, with detailed information about each commit.</p>
+                    <code>git log</code>
+                </div>
+                
+                <div class="command">
+                    <h3>11. git remote</h3>
+                    <p><strong>Description:</strong> Manages the connection with other repositories.</p>
+                    <code>git remote</code><em>remote-URL</em></code>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; 2024 Git Commands - Quick Guide by Vlad & Hugo </p>
+        </div>
+    </footer>
+</body>
+</html>
